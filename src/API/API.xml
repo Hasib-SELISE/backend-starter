@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>API</name>
+    </assembly>
+    <members>
+        <member name="M:API.ServiceExtensions.CronJobRegistration.RegisterCronJobs(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Register cron jobs
+            </summary>
+            <param name="services"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

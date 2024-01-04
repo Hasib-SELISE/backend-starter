@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Content Include="appsettings.dev-az.json">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+            <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+            <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        </Content>
+        <Content Include="appsettings.Development.json">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+            <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+            <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        </Content>
+        <Content Include="appsettings.json">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+            <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+            <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        </Content>
+        <Content Include="appsettings.prod-az.json">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+            <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+            <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        </Content>
+        <Content Include="appsettings.stg-az.json">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+            <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+            <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Selise.Ecap.Hosting" Version="6.0.0.5" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Application\Application.csproj" />
+      <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
+    </ItemGroup>
+
+</Project>
