@@ -35,10 +35,11 @@ void AddApplicationServices(IServiceCollection services, IAppSettings appSetting
     services.RegisterApplicationQueryHandlers();
     services.RegisterApplicationServices();
     services.RegisterInfrastructureServices();
-    services.AddMediatR(Assembly.GetExecutingAssembly());
     services.RegisterCronJobs();
     services.RegisterApplicationValidators();
     services.RegisterApplicationEventHandlers();
+
+    services.AddMediatR(Assembly.GetExecutingAssembly());
 
     EnableSwagger(services, appSettings);
 }

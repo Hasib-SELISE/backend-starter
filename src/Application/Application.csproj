@@ -7,11 +7,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Commands\" />
       <Folder Include="Common\Constants\" />
-      <Folder Include="Common\DTOs\" />
       <Folder Include="Common\Exceptions" />
-      <Folder Include="Common\Profiles\" />
       <Folder Include="GraphQL\Commands" />
       <Folder Include="GraphQL\Validators" />
     </ItemGroup>

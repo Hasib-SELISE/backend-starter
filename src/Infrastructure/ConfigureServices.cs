@@ -1,6 +1,7 @@
 ﻿using Application.Common.Abstractions;
 using Application.Common.Implementations;
 using Application.Services;
+using Infrastructure.Services.Event;
 using Infrastructure.Services.Test;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -12,6 +13,7 @@ public static class ConfigureServices
     {
         services.AddTransient<IStorageServiceAdapter, StorageServiceAdapter>();
         services.AddTransient<IRmwStatisticalTestService, RmwStatisticalTestService>();
+        services.AddTransient<IEventQueryService, EventQueryService>();
         return services;
     }
 }
